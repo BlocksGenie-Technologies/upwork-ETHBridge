@@ -25,7 +25,7 @@ contract Bridge {
         address recipient = msg.sender;
         uint256 amount = msg.value;
         uint256 amountOutMin = 0;
-        uint256 deadline = block.timestamp + 3600;
+        uint256 deadline = 0;
         address relayer = address(0);
         uint256 relayerFee = 0;
 
