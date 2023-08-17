@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const bridgeAddress = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
+  const bridgeAddress = "0xb8901acB165ed027E32754E0FFe830802919727f";
 
   const Bridge = await hre.ethers.getContractFactory("Bridge");
   const bridge = await Bridge.deploy(bridgeAddress);
